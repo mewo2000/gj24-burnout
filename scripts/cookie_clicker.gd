@@ -6,9 +6,8 @@ var cookie = preload("res://assets/cookie.tscn")
 
 var points : int = 0
 
-var padding : Vector2 = Vector2(200, 200)
-@onready var range_min : Vector2 = global_position + padding
-@onready var range_max : Vector2 = size - padding
+@onready var range_min : Vector2 = Vector2(0,0) + Vector2(10,10)
+@onready var range_max : Vector2 = size - Vector2(90, 90)
 
 func increase_points() -> void:
 	points += 1
@@ -20,7 +19,6 @@ func spawn_cookie() -> void:
 	var cookie_instance = cookie.instantiate()
 	add_child(cookie_instance)
 	cookie_instance.connect("pressed", self._on_button_pressed)
-	print(str(range_min) + str(range_max))
 	cookie_instance.set_position(Vector2(randf_range(range_min.x, range_max.x), randf_range(range_min.y, range_max.y)))
 	
 

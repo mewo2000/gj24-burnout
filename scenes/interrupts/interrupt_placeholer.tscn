@@ -1,6 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d221k6ici2wws"]
-
-[ext_resource type="Texture2D" path="res://icon.svg" id="1_5tfpl"]
+[gd_scene load_steps=3 format=3 uid="uid://d221k6ici2wws"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_krmri"]
 bg_color = Color(0.293054, 0.342054, 0.431772, 1)
@@ -49,4 +47,3 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_vb6p3")
 
 [node name="Icon" type="Sprite2D" parent="Name"]
 position = Vector2(495, 191)
-texture = ExtResource("1_5tfpl")
